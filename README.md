@@ -1,9 +1,9 @@
-# ONLINE HANDWRITTEN MATH FORMULAS SEGMENTER
+# Online Handwritten Math Formulas Segmenter
 April 21, 2017
 
 This is an implementation of a method for segmenting on-line handwritten math formulas that consists of line of sight stroke graph representation of the formula, feature extraction and training of a random forest classifier.
 
-## 1) FILES
+## 1) Files
 The directory in which this file is present contains also the following files:
   • a folder called "project" containing the files:
     - create_dataset.py
@@ -17,21 +17,21 @@ The directory in which this file is present contains also the following files:
   • a folder called "ICFHR_package" containing the training and testing sets from the CROHME competition. In this project we use only the training files. 
   • this README file
 
-## 2) PREREQUISITES
+## 2) Prerequisites
   • Python 2.7.10
   • numpy
   • scipy
   • matpotlib
   • sklearn
 
-## 3) GETTING STARTED
+## 3) Getting Started
 The method is divided in two consecutive phases:
   1. creation of the training and testing set.
   2. training and classification phase.
 
-## 4) RUNNING TESTS
+## 4) Running Tests
 
-### 4.1) DATASET CREATION
+### 4.1) Dataset Creation
 We have to open the "project" folder. In the create_dataset.py file the code is the follower:
   1. import dataset_utils as du
   2. DIRECTORY = ’DIRECTORY_PATH’
@@ -49,7 +49,7 @@ Here we have to do the following changes:
 At the end of this phase two files .txt (one for the training and the other
 for the testing set) will be created in the specified paths.
 
-### 4.2) TRAINING AND CLASSIFICATION
+### 4.2) Training and Classification
 In the second step we have to open the script random_forest.py. Here we have to add:
   • the path of the training set that we have created in the first step as input of the function ds.load_dataset_from_file() (at line 18).
   For example:
