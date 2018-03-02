@@ -59,3 +59,5 @@ In the second step we have to open the script random_forest.py. Here we have to 
   testing_set, testing_labels = ds.load_dataset_from_file(’ /Users/../Desktop/testset.txt’)
   • modify the test_result_file variable adding the path to the text file in which the test results will be written.
 After we have done these changes, we can run the random_forest.py file. A text file (in the specified path) will be written with all the informations gathered from the tests.
+
+### prova
